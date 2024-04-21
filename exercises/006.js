@@ -23,4 +23,13 @@ Starter Code:
 
 function convertObjectToList(obj) {
   // your code here
+  let out = []
+
+  for (const key in obj) {
+    if (Object.hasOwnProperty.call(obj, key)) {
+      out.push([key, obj[key]])
+      
+    }
+  }
+  return out
 }

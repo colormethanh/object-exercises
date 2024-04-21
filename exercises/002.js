@@ -26,5 +26,11 @@ function getAllKeys(obj) {
 */
 
 function getAllKeys(obj){
-  // your code here
+  let out = []
+
+  for (prop in obj) {
+    out.push(prop)
+  }
+
+  return out
 }

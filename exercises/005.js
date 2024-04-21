@@ -27,4 +27,21 @@ Starter Code :
 function transformEmployeeData(array) {
   // your code here
 
+  let out = []
+
+  // Loop through array of people (outer)
+  for (let index = 0; index < array.length; index++) {
+    var person = array[index];
+    var personObj = {}
+
+
+    // Loop through properties of person (inner)
+    for (let i = 0; i < person.length; i++) {
+      const prop = person[i]
+      personObj[prop[0]] = prop[1]
+    }
+    out.push(personObj)
+  }
+
+  return out
 }

@@ -21,5 +21,11 @@ Starter Code:
 
 function fromListToObject(array) {
   // your code here
+  let out = {}
 
+  for (var i = 0; i < array.length; i++) {
+    out[array[i][0]] = array[i][1]
+  }
+  
+  return out
 }

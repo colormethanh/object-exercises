@@ -23,5 +23,10 @@ function transformFirstAndLast(array) {
 */
 
 function transformFirstAndLast(array) {
+  let first = array[0]
+  let last = array[array.length - 1]
+  let out = {}
+  out[first] = last
+  return out
   //your code here
 }
